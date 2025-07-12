@@ -130,4 +130,3 @@ const styles = StyleSheet.create({
     margin: 1,
   },
 });
-</Card>
