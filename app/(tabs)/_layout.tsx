@@ -21,19 +21,6 @@ export default function TabLayout() {
           fontWeight: '600',
         },
       }}>
-          borderTopWidth: 1,
-          borderTopColor: '#E5E7EB',
-          paddingBottom: 8,
-          paddingTop: 8,
-          height: 70,
-        },
-        tabBarActiveTintColor: '#2563EB',
-        tabBarInactiveTintColor: '#6B7280',
-        tabBarLabelStyle: {
-          fontSize: 12,
-          fontWeight: '600',
-        },
-      }}>
       <Tabs.Screen
         name="index"
         options={{

@@ -31,8 +31,6 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(34, 197, 94, 0.1)',
     borderBottomWidth: 1,
     borderBottomColor: 'rgba(34, 197, 94, 0.2)',
-    borderBottomWidth: 1,
-    borderBottomColor: '#E5E7EB',
   },
   titleSection: {
     flex: 1,
