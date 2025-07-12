@@ -1,11 +1,13 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import AnimatedCard from './AnimatedCard';
+import { LinearGradient } from 'expo-linear-gradient';
 
 export default function OverallProgress() {
   const progressPercentage = 65;
 
   return (
-    <View style={styles.container}>
+    <AnimatedCard style={styles.container} delay={100}>
       <View style={styles.header}>
         <Text style={styles.title}>Overall Progress</Text>
         <Text style={styles.percentage}>{progressPercentage}%</Text>
@@ -13,11 +15,14 @@ export default function OverallProgress() {
       
       <View style={styles.progressBarContainer}>
         <View style={styles.progressBarBackground}>
-          <View 
+          <LinearGradient
+            colors={['#22C55E', '#16A34A', '#059669']}
+            start={{ x: 0, y: 0 }}
+            end={{ x: 1, y: 0 }}
             style={[
               styles.progressBarFill, 
               { width: `${progressPercentage}%` }
-            ]} 
+            ]}
           />
         </View>
       </View>
@@ -40,21 +45,14 @@ export default function OverallProgress() {
       <Text style={styles.estimate}>
         Estimated completion: December 15, 2024
       </Text>
-    </View>
+    </AnimatedCard>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#FFFFFF',
-    borderRadius: 12,
     padding: 20,
     marginBottom: 16,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 1 },
-    shadowOpacity: 0.05,
-    shadowRadius: 3,
-    elevation: 2,
   },
   header: {
     flexDirection: 'row',
@@ -83,7 +81,6 @@ const styles = StyleSheet.create({
   },
   progressBarFill: {
     height: '100%',
-    backgroundColor: '#2563EB',
     borderRadius: 4,
   },
   stats: {

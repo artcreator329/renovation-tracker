@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { Calendar } from 'lucide-react-native';
+import AnimatedCard from './AnimatedCard';
 
 export default function UpcomingDeadlines() {
   const deadlines = [
@@ -10,7 +11,7 @@ export default function UpcomingDeadlines() {
   ];
 
   return (
-    <View style={styles.container}>
+    <AnimatedCard style={styles.container} delay={700}>
       <Text style={styles.title}>Upcoming Deadlines</Text>
       <View style={styles.deadlineList}>
         {deadlines.map((deadline) => (
@@ -32,16 +33,12 @@ export default function UpcomingDeadlines() {
           </View>
         ))}
       </View>
-    </View>
+    </AnimatedCard>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'rgba(34, 197, 94, 0.1)',
-    borderWidth: 1,
-    borderColor: 'rgba(34, 197, 94, 0.2)',
-    borderRadius: 12,
     padding: 16,
     flex: 1,
   },

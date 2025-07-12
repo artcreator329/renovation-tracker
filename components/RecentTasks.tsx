@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { CircleCheck as CheckCircle, Clock, CircleAlert as AlertCircle } from 'lucide-react-native';
+import AnimatedCard from './AnimatedCard';
 
 export default function RecentTasks() {
   const tasks = [
@@ -23,7 +24,7 @@ export default function RecentTasks() {
   };
 
   return (
-    <View style={styles.container}>
+    <AnimatedCard style={styles.container} delay={600}>
       <Text style={styles.title}>Recent Tasks</Text>
       <View style={styles.taskList}>
         {tasks.map((task) => (
@@ -40,16 +41,12 @@ export default function RecentTasks() {
           </View>
         ))}
       </View>
-    </View>
+    </AnimatedCard>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'rgba(34, 197, 94, 0.1)',
-    borderWidth: 1,
-    borderColor: 'rgba(34, 197, 94, 0.2)',
-    borderRadius: 12,
     padding: 16,
     flex: 1,
   },

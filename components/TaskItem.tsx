@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { CircleCheck as CheckCircle, Circle, User, Calendar, Flag } from 'lucide-react-native';
+import AnimatedCard from './AnimatedCard';
 
 interface Task {
   id: number;
@@ -51,10 +52,13 @@ export default function TaskItem({ task }: TaskItemProps) {
   };
 
   return (
-    <View style={[
-      styles.container,
-      task.status === 'overdue' && styles.overdueContainer
-    ]}>
+    <AnimatedCard 
+      style={[
+        styles.container,
+        task.status === 'overdue' && styles.overdueContainer
+      ]}
+      delay={task.id * 100}
+    >
       <View style={styles.header}>
         <View style={styles.titleSection}>
           <TouchableOpacity style={styles.checkbox}>
@@ -106,21 +110,14 @@ export default function TaskItem({ task }: TaskItemProps) {
           </View>
         </View>
       </View>
-    </View>
+    </AnimatedCard>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#FFFFFF',
-    borderRadius: 12,
     padding: 16,
     marginBottom: 12,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 1 },
-    shadowOpacity: 0.05,
-    shadowRadius: 3,
-    elevation: 2,
   },
   overdueContainer: {
     borderLeftWidth: 4,

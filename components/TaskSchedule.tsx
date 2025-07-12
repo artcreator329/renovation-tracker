@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, ScrollView } from 'react-native';
 import { Clock, User, MapPin } from 'lucide-react-native';
+import AnimatedCard from './AnimatedCard';
 
 interface TaskScheduleProps {
   selectedDate: Date;
@@ -63,7 +64,7 @@ export default function TaskSchedule({ selectedDate }: TaskScheduleProps) {
       
       <ScrollView style={styles.taskList} showsVerticalScrollIndicator={false}>
         {tasks.map((task) => (
-          <View key={task.id} style={styles.taskCard}>
+          <AnimatedCard key={task.id} style={styles.taskCard} delay={200 + task.id * 100}>
             <View style={styles.taskHeader}>
               <View style={styles.taskInfo}>
                 <Text style={styles.taskTitle}>{task.title}</Text>
@@ -88,7 +89,7 @@ export default function TaskSchedule({ selectedDate }: TaskScheduleProps) {
                 <Text style={styles.detailText}>{task.location}</Text>
               </View>
             </View>
-          </View>
+          </AnimatedCard>
         ))}
       </ScrollView>
     </View>
@@ -109,10 +110,6 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   taskCard: {
-    backgroundColor: 'rgba(34, 197, 94, 0.1)',
-    borderWidth: 1,
-    borderColor: 'rgba(34, 197, 94, 0.2)',
-    borderRadius: 12,
     padding: 16,
     marginBottom: 12,
   },

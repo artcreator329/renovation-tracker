@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
+import AnimatedCard from './AnimatedCard';
 
 interface CalendarViewProps {
   selectedDate: Date;
@@ -45,7 +46,7 @@ export default function CalendarView({ selectedDate, onDateSelect, viewMode }: C
   };
 
   return (
-    <View style={styles.container}>
+    <AnimatedCard style={styles.container} delay={100}>
       <Text style={styles.monthYear}>
         {selectedDate.toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}
       </Text>
@@ -89,16 +90,12 @@ export default function CalendarView({ selectedDate, onDateSelect, viewMode }: C
           <Text style={styles.comingSoon}>Month view coming soon...</Text>
         </View>
       )}
-    </View>
+    </AnimatedCard>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'rgba(34, 197, 94, 0.1)',
-    borderWidth: 1,
-    borderColor: 'rgba(34, 197, 94, 0.2)',
-    borderRadius: 12,
     padding: 16,
     marginBottom: 16,
   },

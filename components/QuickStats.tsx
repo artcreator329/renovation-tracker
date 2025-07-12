@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import AnimatedCard from './AnimatedCard';
 
 export default function QuickStats() {
   const stats = [
@@ -10,7 +11,7 @@ export default function QuickStats() {
   ];
 
   return (
-    <View style={styles.container}>
+    <AnimatedCard style={styles.container} delay={500}>
       <Text style={styles.title}>Task Summary</Text>
       <View style={styles.statsRow}>
         {stats.map((stat, index) => (
@@ -22,16 +23,12 @@ export default function QuickStats() {
           </View>
         ))}
       </View>
-    </View>
+    </AnimatedCard>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'rgba(34, 197, 94, 0.1)',
-    borderWidth: 1,
-    borderColor: 'rgba(34, 197, 94, 0.2)',
-    borderRadius: 12,
     padding: 16,
     marginBottom: 16,
   },
