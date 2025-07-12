@@ -125,7 +125,7 @@ const styles = StyleSheet.create({
   },
   content: {
     flex: 1,
-    backgroundColor: 'rgba(15, 15, 15, 0.8)',
+    backgroundColor: 'rgba(15, 15, 15, 0.2)',
     borderRadius: 11,
     margin: 1,
   },
