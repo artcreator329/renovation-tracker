@@ -185,7 +185,7 @@ export default function AddTaskModal({ visible, onClose }: AddTaskModalProps) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F8FAFC',
+    backgroundColor: '#0F0F0F',
   },
   header: {
     flexDirection: 'row',
@@ -193,14 +193,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingHorizontal: 16,
     paddingVertical: 16,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: 'rgba(34, 197, 94, 0.1)',
     borderBottomWidth: 1,
-    borderBottomColor: '#E5E7EB',
+    borderBottomColor: 'rgba(34, 197, 94, 0.2)',
   },
   title: {
     fontSize: 20,
     fontWeight: '600',
-    color: '#111827',
+    color: '#FFFFFF',
   },
   closeButton: {
     padding: 4,
@@ -217,18 +217,18 @@ const styles = StyleSheet.create({
   label: {
     fontSize: 16,
     fontWeight: '600',
-    color: '#111827',
+    color: '#FFFFFF',
     marginBottom: 8,
   },
   input: {
-    backgroundColor: '#FFFFFF',
+    backgroundColor: 'rgba(34, 197, 94, 0.1)',
     borderWidth: 1,
-    borderColor: '#D1D5DB',
+    borderColor: 'rgba(34, 197, 94, 0.3)',
     borderRadius: 8,
     paddingHorizontal: 12,
     paddingVertical: 12,
     fontSize: 16,
-    color: '#111827',
+    color: '#FFFFFF',
   },
   textArea: {
     height: 100,
@@ -237,9 +237,9 @@ const styles = StyleSheet.create({
   inputWithIcon: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#FFFFFF',
+    backgroundColor: 'rgba(34, 197, 94, 0.1)',
     borderWidth: 1,
-    borderColor: '#D1D5DB',
+    borderColor: 'rgba(34, 197, 94, 0.3)',
     borderRadius: 8,
     paddingHorizontal: 12,
     paddingVertical: 12,
@@ -247,7 +247,7 @@ const styles = StyleSheet.create({
   iconInput: {
     flex: 1,
     fontSize: 16,
-    color: '#111827',
+    color: '#FFFFFF',
     marginLeft: 8,
   },
   priorityContainer: {
@@ -260,15 +260,15 @@ const styles = StyleSheet.create({
     paddingHorizontal: 12,
     paddingVertical: 8,
     borderRadius: 8,
-    backgroundColor: '#F3F4F6',
+    backgroundColor: 'rgba(34, 197, 94, 0.2)',
     borderWidth: 1,
-    borderColor: '#E5E7EB',
+    borderColor: 'rgba(34, 197, 94, 0.3)',
   },
   priorityText: {
     fontSize: 14,
     fontWeight: '500',
     marginLeft: 6,
-    color: '#374151',
+    color: '#FFFFFF',
   },
   phaseContainer: {
     flexDirection: 'row',
@@ -278,18 +278,18 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     paddingVertical: 8,
     borderRadius: 20,
-    backgroundColor: '#F3F4F6',
+    backgroundColor: 'rgba(34, 197, 94, 0.2)',
     borderWidth: 1,
-    borderColor: '#E5E7EB',
+    borderColor: 'rgba(34, 197, 94, 0.3)',
   },
   selectedPhase: {
-    backgroundColor: '#2563EB',
-    borderColor: '#2563EB',
+    backgroundColor: '#22C55E',
+    borderColor: '#22C55E',
   },
   phaseText: {
     fontSize: 14,
     fontWeight: '500',
-    color: '#374151',
+    color: '#FFFFFF',
   },
   selectedPhaseText: {
     color: '#FFFFFF',
@@ -298,9 +298,9 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     paddingHorizontal: 16,
     paddingVertical: 16,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: 'rgba(34, 197, 94, 0.1)',
     borderTopWidth: 1,
-    borderTopColor: '#E5E7EB',
+    borderTopColor: 'rgba(34, 197, 94, 0.2)',
     gap: 12,
   },
   cancelButton: {
@@ -308,19 +308,19 @@ const styles = StyleSheet.create({
     paddingVertical: 12,
     borderRadius: 8,
     borderWidth: 1,
-    borderColor: '#D1D5DB',
+    borderColor: 'rgba(34, 197, 94, 0.4)',
     alignItems: 'center',
   },
   cancelText: {
     fontSize: 16,
     fontWeight: '600',
-    color: '#374151',
+    color: '#FFFFFF',
   },
   saveButton: {
     flex: 1,
     paddingVertical: 12,
     borderRadius: 8,
-    backgroundColor: '#2563EB',
+    backgroundColor: '#22C55E',
     alignItems: 'center',
   },
   saveText: {

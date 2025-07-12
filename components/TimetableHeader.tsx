@@ -50,9 +50,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingHorizontal: 16,
     paddingVertical: 16,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: 'rgba(34, 197, 94, 0.1)',
     borderBottomWidth: 1,
-    borderBottomColor: '#E5E7EB',
+    borderBottomColor: 'rgba(34, 197, 94, 0.2)',
   },
   titleSection: {
     flex: 1,
@@ -60,12 +60,12 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 24,
     fontWeight: '700',
-    color: '#111827',
+    color: '#FFFFFF',
     marginBottom: 8,
   },
   viewToggle: {
     flexDirection: 'row',
-    backgroundColor: '#F3F4F6',
+    backgroundColor: 'rgba(34, 197, 94, 0.2)',
     borderRadius: 8,
     padding: 2,
     alignSelf: 'flex-start',
@@ -76,12 +76,12 @@ const styles = StyleSheet.create({
     borderRadius: 6,
   },
   activeToggle: {
-    backgroundColor: '#2563EB',
+    backgroundColor: '#22C55E',
   },
   toggleText: {
     fontSize: 14,
     fontWeight: '500',
-    color: '#6B7280',
+    color: 'rgba(255, 255, 255, 0.7)',
   },
   activeToggleText: {
     color: '#FFFFFF',
@@ -93,11 +93,11 @@ const styles = StyleSheet.create({
   iconButton: {
     padding: 10,
     borderRadius: 8,
-    backgroundColor: '#F3F4F6',
+    backgroundColor: 'rgba(34, 197, 94, 0.2)',
   },
   addButton: {
     padding: 10,
     borderRadius: 8,
-    backgroundColor: '#2563EB',
+    backgroundColor: '#22C55E',
   },
 });

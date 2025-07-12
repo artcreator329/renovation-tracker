@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 20,
     fontWeight: '700',
-    color: '#111827',
+    color: '#FFFFFF',
     marginBottom: 16,
   },
   grid: {
@@ -60,19 +60,17 @@ const styles = StyleSheet.create({
     gap: 12,
   },
   card: {
-    backgroundColor: '#FFFFFF',
+    backgroundColor: 'rgba(34, 197, 94, 0.1)',
+    borderWidth: 1,
+    borderColor: 'rgba(34, 197, 94, 0.2)',
     borderRadius: 12,
     padding: 16,
     flex: 1,
     minWidth: '47%',
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 1 },
-    shadowOpacity: 0.05,
-    shadowRadius: 3,
-    elevation: 2,
   },
   primaryCard: {
-    backgroundColor: '#2563EB',
+    background: 'linear-gradient(135deg, #22C55E 0%, #16A34A 100%)',
+    backgroundColor: '#22C55E',
     width: '100%',
     minWidth: '100%',
   },
@@ -83,7 +81,7 @@ const styles = StyleSheet.create({
   },
   cardTitle: {
     fontSize: 14,
-    color: '#6B7280',
+    color: 'rgba(255, 255, 255, 0.8)',
     marginLeft: 8,
     fontWeight: '500',
   },
@@ -92,12 +90,11 @@ const styles = StyleSheet.create({
     color: '#FFFFFF',
     marginLeft: 8,
     fontWeight: '500',
-    opacity: 0.9,
   },
   cardValue: {
     fontSize: 24,
     fontWeight: '700',
-    color: '#111827',
+    color: '#FFFFFF',
   },
   primaryCardValue: {
     fontSize: 32,
@@ -107,7 +104,7 @@ const styles = StyleSheet.create({
   primaryCardSubtitle: {
     fontSize: 12,
     color: '#FFFFFF',
-    opacity: 0.8,
+    opacity: 0.9,
     marginTop: 4,
   },
 });

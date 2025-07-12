@@ -28,7 +28,34 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingHorizontal: 16,
     paddingVertical: 16,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: 'rgba(34, 197, 94, 0.1)',
+    borderBottomWidth: 1,
+    borderBottomColor: 'rgba(34, 197, 94, 0.2)',
+  },
+  titleSection: {
+    flex: 1,
+  },
+  greeting: {
+    fontSize: 14,
+    color: 'rgba(255, 255, 255, 0.7)',
+    fontWeight: '500',
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: '700',
+    color: '#FFFFFF',
+    marginTop: 2,
+  },
+  actions: {
+    flexDirection: 'row',
+    gap: 8,
+  },
+  iconButton: {
+    padding: 8,
+    borderRadius: 8,
+    backgroundColor: 'rgba(34, 197, 94, 0.2)',
+  },
+});
     borderBottomWidth: 1,
     borderBottomColor: '#E5E7EB',
   },

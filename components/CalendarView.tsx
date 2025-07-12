@@ -95,20 +95,17 @@ export default function CalendarView({ selectedDate, onDateSelect, viewMode }: C
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#FFFFFF',
+    backgroundColor: 'rgba(34, 197, 94, 0.1)',
+    borderWidth: 1,
+    borderColor: 'rgba(34, 197, 94, 0.2)',
     borderRadius: 12,
     padding: 16,
     marginBottom: 16,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 1 },
-    shadowOpacity: 0.05,
-    shadowRadius: 3,
-    elevation: 2,
   },
   monthYear: {
     fontSize: 18,
     fontWeight: '600',
-    color: '#111827',
+    color: '#FFFFFF',
     marginBottom: 16,
     textAlign: 'center',
   },
@@ -121,38 +118,38 @@ const styles = StyleSheet.create({
     padding: 12,
     borderRadius: 12,
     minWidth: 60,
-    backgroundColor: '#F8FAFC',
+    backgroundColor: 'rgba(34, 197, 94, 0.15)',
   },
   selectedDay: {
-    backgroundColor: '#2563EB',
+    backgroundColor: '#22C55E',
   },
   todayDay: {
-    backgroundColor: '#EFF6FF',
+    backgroundColor: 'rgba(34, 197, 94, 0.3)',
     borderWidth: 2,
-    borderColor: '#2563EB',
+    borderColor: '#22C55E',
   },
   dayText: {
     fontSize: 12,
     fontWeight: '500',
-    color: '#6B7280',
+    color: 'rgba(255, 255, 255, 0.7)',
     marginBottom: 4,
   },
   selectedDayText: {
     color: '#FFFFFF',
   },
   todayDayText: {
-    color: '#2563EB',
+    color: '#22C55E',
   },
   dateText: {
     fontSize: 16,
     fontWeight: '700',
-    color: '#111827',
+    color: '#FFFFFF',
   },
   selectedDateText: {
     color: '#FFFFFF',
   },
   todayDateText: {
-    color: '#2563EB',
+    color: '#22C55E',
   },
   monthView: {
     height: 200,
@@ -161,7 +158,7 @@ const styles = StyleSheet.create({
   },
   comingSoon: {
     fontSize: 16,
-    color: '#6B7280',
+    color: 'rgba(255, 255, 255, 0.7)',
     fontStyle: 'italic',
   },
 });

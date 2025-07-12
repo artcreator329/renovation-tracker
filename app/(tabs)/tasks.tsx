@@ -44,7 +44,7 @@ export default function TasksScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F8FAFC',
+    backgroundColor: '#0F0F0F',
   },
   scrollView: {
     flex: 1,
